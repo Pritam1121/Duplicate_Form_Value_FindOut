@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "EDM LP Link Testing",
+  "version": "2.0",
+  "description": "I am writing to provide a comprehensive overview of the latest enhancements in our tool's multiple testing capabilities.The first standout feature is the efficient duplicate input name checker, ensuring seamless identification and elimination of any duplicated names within the system.Moreover, our tool now includes a functionality that meticulously examines select box values for both special symbols and the presence of the '+' symbol. This enhancement significantly contributes to ensuring the integrity of our select box options.Additionally, we have implemented a duplicate value checker for forms, guaranteeing an error-free experience by flagging and rectifying any instances of duplicate values.Furthermore, our dedicated team has meticulously reviewed and addressed the current copyright error, ensuring compliance and accuracy in our content. We've also updated the footer address for precision and relevance.These enhancements collectively fortify the functionality and accuracy of our tool, ensuring a smoother and more reliable user experience.Thank you for your attention to these advancements. Should you have any questions or require further clarification, please feel free to reach out.",
+  "author": "Tausif Patel",
+  "incognito": "split",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery.js", "content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "Logo.png",
+      "48": "Logo.png",
+      "128": "Logo.png"
+    }
+   
+  },
+  "icons": {
+    "16": "Logo.png",
+    "48": "Logo.png",
+    "128": "Logo.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+U",
+        "mac": "Command+U"
+      }
+    }
+  }
+
+}
